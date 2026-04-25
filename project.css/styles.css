@@ -38,6 +38,12 @@ a {
  }
 
 /* Mobile First Navigation */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
 .navbar {
     display: flex;  
     flex-wrap: wrap;
@@ -46,9 +52,8 @@ a {
     background-color: #1f2937;
     color: #f6f6f6;
     padding: 1rem 1.5rem;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    position: relative;
+    
 }
 
 .logo a {
@@ -242,7 +247,7 @@ a {
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0,0,0,0.08)
-    border: 1px solid #e2e8f0
+    border: 1px solid #e2e8f0;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -637,7 +642,7 @@ footer p {
     }
 
     /* Contact Grid */
-    .contact-grid: {
+    .contact-grid {
         display: grid;
         gap: 4rem;
     }
